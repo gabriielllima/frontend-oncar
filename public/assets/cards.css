@@ -1,0 +1,32 @@
+.card-first {
+  flex: 3;
+  margin: 32px;
+  height: 90%;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-second {
+  flex: 2;
+  margin: 32px;
+
+  height: 90%;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card-main:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.group-cards {
+  justify-content: center;
+  display: flex;
+  height: 100%;
+
+  padding: 10px;
+}

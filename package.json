@@ -1,0 +1,25 @@
+{
+  "name": "50bb202deb977ec51a89efb00a9774f5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://gist.github.com/50bb202deb977ec51a89efb00a9774f5.git",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack",
+    "start": "http-server"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

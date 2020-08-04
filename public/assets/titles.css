@@ -1,0 +1,40 @@
+.title-details {
+  margin: 8px;
+
+  font: Bold 24px Segoe UI;
+  color: var(--primary-color);
+}
+.title-modal {
+  margin: 8px;
+
+  font: Bold 18px Segoe UI;
+  color: var(--gray-900-color);
+}
+.title-bigger {
+  margin: 10px;
+  margin-left: 5px;
+  font: Bold 200% Segoe UI;
+  color: var(--gray-800-color);
+}
+.title-medium {
+  font: Bold 18px Segoe UI;
+  margin-left: 0px;
+  margin: 20px;
+  color: var(--gray-800-color);
+}
+.title-small {
+  margin-left: 0px;
+  font: Bold 16px Segoe UI;
+  color: var(--gray-800-color);
+}
+.title-blue {
+  margin-right: 8px;
+  font: Bold 16px Segoe UI;
+  color: var(--primary-color);
+}
+.title-static-details {
+  font: 14px Segoe UI;
+}
+.navbar-title {
+  margin: 20px;
+}

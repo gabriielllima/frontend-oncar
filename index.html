@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debounce</title>
+
+    <link rel="stylesheet" href="public/assets/style.css" />
+    <link rel="stylesheet" href="public/assets/cards.css" />
+    <link rel="stylesheet" href="public/assets/titles.css" />
+    <link rel="stylesheet" href="public/assets/modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+          <h1 class="navbar-title" href="#home">TESTE</h1>
+        </div>
+        <hr />
+
+        <div class="navbar">
+          <div class="search">
+            <input class="input-search" id="input-search" type="text" placeholder="Buscar Veículo" />
+            <button id="search" class="button-search" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+            <button id="add" class="button-add" type="submit">
+              <i class="fa fa-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="group-cards">
+        <div class="card-first">
+          <h1 class="title-bigger">Lista de veículos</h1>
+          <div class="list" id="list">
+      
+          </div>
+        </div>
+        <div class="card-second">
+          <div class="details-header">
+            <h1>Detalhes</h1>
+            <hr />   
+          </div>
+          <div class="details-body" id="details">
+            <div class="details-first">
+              <h1 class="title-details" id="vehicle-details" ></h1>
+
+            </div>
+            <div class="details-second">
+              <div class="brand-vehicle"> 
+                 <label class="brand-vehicle" for="brand" >MARCA
+                </label>
+                <div class="title-bigger" id="brand-details" ></div>
+              </div>
+              <div  class="brand-vehicle"> 
+                <label  for="brand" >ANO
+                </label>
+                <div   class="title-bigger"  id="year-details"></div>
+             </div>
+            </div>
+            <div class="title-medium"  id="description-details">
+
+             
+            </div>
+          </div>
+          <hr>
+          <input type="hidden" id="id-details" >
+
+          <div class="details-footer">
+            <button  id="edit-details-submit" type="submit" class="button-updated-submit">EDITAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <form action="" id="form-id">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="header-modal">
+            <h1>Detalhes</h1>
+            <hr />
+          </div>
+
+          <div class="body-modal">
+            <div class="first-input">
+              <label for="test" class="label title-modal"> Veículo</label>
+              <input class="input-modal" id="vehicle" type="text" />
+            </div>
+            <div class="second-input">
+              <div class="input-label">
+                <label for="test" class="label title-modal"> Marca</label>
+                <input class="input-modal" id="brand" type="text" />
+              </div>
+              <div class="input-label">
+                <label for="test" class="label title-modal"> Ano</label>
+                <input class="input-modal"   id="year" type="number" min="0" step="1" oninput="validity.valid||(value='');">
+
+              </div>
+            </div>
+            <div class="third-input">
+              <label for="test" class="label title-modal"> Descrição</label>
+        
+              <textarea
+                id="description"
+                class="input-modal-description"
+                name="w3review"
+                rows="4"
+                cols="50"
+              >
+              </textarea>
+              <input type="hidden" id="id" >
+
+              <div >
+                <input type="checkbox" class="checkbox"id="sold" title="tets" />
+                <label for="subscribeNews" class="title-medium">Vendido</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-modal">
+            <button id="button-add-submit" name="button-add-submit"  class="button-add-submit" >CADASTRAR</button>
+            <button id="button-updated-submit"  name="button-updated-submit" class="button-updated-submit">SALVAR</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    <script src="build/bundle.js"></script>
+    <script src="build/service.js"></script>
+
+  </body>
+</html>
